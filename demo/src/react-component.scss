@@ -1,0 +1,9 @@
+.react-component {
+  width: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.react-component--flipped {
+  transform: rotateY(180deg);
+}

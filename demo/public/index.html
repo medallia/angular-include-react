@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="dist/bundle.css">
+	<title>React Include Demo</title>
+</head>
+<body ng-app="angular-include-react-demo">
+	<h3>Angular World:</h3>
+	<angular-container-component></angular-container-component>
+
+	<h3>React World:</h3>
+	<!-- Use include-react angular-component to render a react container component -->
+	<include-react component="react-component"></include-react>
+
+	<script src="dist/bundle.js"></script>
+</body>
+</html>

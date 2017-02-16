@@ -1,0 +1,68 @@
+{
+  "name": "angular-include-react",
+  "version": "0.1.0",
+  "description": "Include React container components into a AngularJS+Redux SPA",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "lint": "eslint src demo/src",
+    "lint:fix": "npm run -s lint -- --fix",
+    "start": "npm run -s build && npm run -s build:demo && npm run -s serve",
+    "serve": "node demo/server.js",
+    "build:demo": "(cd demo; rm -rf dist && mkdir dist && NODE_ENV=development webpack --progress)",
+    "test": "mocha --require babel-register 'src/**/*.spec.js'"
+  },
+  "files": [
+    "dist/"
+  ],
+  "author": "Medallia",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.medallia.com/OA-Frontend/react-include"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-register": "^6.23.0",
+    "chai": "^4.0.0-canary.2",
+    "chai-enzyme": "^0.6.1",
+    "css-loader": "^0.26.1",
+    "enzyme": "^2.7.1",
+    "eslint": "^3.16.0",
+    "eslint-plugin-react": "^6.10.0",
+    "express": "^4.14.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "mocha": "^3.2.0",
+    "ng-annotate-loader": "^0.2.0",
+    "ng-redux": "^3.4.0-beta.1",
+    "node-sass": "^4.5.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-redux": "^5.0.4",
+    "react-test-renderer": "^15.5.4",
+    "redux": "^3.6.0",
+    "sass-loader": "^6.0.0",
+    "sinon": "^2.2.0",
+    "sinon-chai": "^2.8.0",
+    "webpack": "^2.2.1",
+    "webpack-config-utils": "^2.3.0"
+  },
+  "keywords": [
+    "angular",
+    "include",
+    "react",
+    "redux"
+  ]
+}
