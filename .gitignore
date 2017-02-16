@@ -1,0 +1,21 @@
+# Editor
+.idea/
+*.iml
+
+# Node
+node_modules/
+
+# Output
+dist/
+lib/
+coverage/
+
+# Test
+test/visual/*.new.png
+test/visual/*.diff.png
+
+# Log files
+*.log
+
+# Mac
+.DS_Store

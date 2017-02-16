@@ -1,0 +1,12 @@
+---
+extends: '@m/eslint-config/babel'
+env:
+  mocha: true
+  node: true
+  es6: true
+rules:
+  newline-per-chained-call: 0
+globals:
+  browser: true
+  checkScreenshot: true
+  expect: true
