@@ -1,4 +1,5 @@
-![Angular Include React](https://github.medallia.com/storage/user/135/files/6af9385c-33f4-11e7-892f-719afffa5afb)
+![Angular Include React](https://cloud.githubusercontent.com/assets/402730/25906472/1c77fd16-357b-11e7-9524-5d42ea2a76f6.jpg)
+
 =============
 
 React Include allows you to embed React [container components](https://medium.com/@learnreact/container-components-c0e67432e005) inside an AngularJS application, synchronizing them through a Redux store. You can think of it as a lightweight alternative to [ng-react](https://www.npmjs.com/package/ngreact), that avoids all the integration quirks by connecting the components through redux (that's framework agnostic), instead of transforming AngularJS bindings to React props.
