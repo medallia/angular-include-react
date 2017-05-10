@@ -19,7 +19,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.medallia.com/OA-Frontend/react-include"
+    "url": "https://github.com/medallia/angular-include-react"
   },
   "dependencies": {
     "angular": "^1.5.0",
