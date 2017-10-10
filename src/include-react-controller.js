@@ -28,6 +28,6 @@ export default class IncludeReactController {
 	}
 
 	unmountComponent(element) {
-		ReactDOM.unmountComponentAtNode(element);
+		ReactDOM.unmountComponentAtNode(element[0]);
 	}
 }

@@ -19,7 +19,7 @@ describe('IncludeReact controller', function() {
 
 	beforeEach(function() {
 		sandbox = sinon.sandbox.create();
-		mockElement = {};
+		mockElement = [{}];
 		mockComponent = function MyComponent() {};
 		mockNgRedux = {};
 		mockRender = sandbox.stub(ReactDOM, 'render');
@@ -40,15 +40,17 @@ describe('IncludeReact controller', function() {
 		includeReactController.$postLink();
 		expect(mockRender).to.have.been.calledOnce;
 		const { type, props } = mockRender.firstCall.args[0];
+		const domContainerNode = mockRender.firstCall.args[1];
 		expect(type).to.equal(IncludeReactReactComponent);
 		expect(props).to.have.property('store').that.equals(mockNgRedux);
 		expect(props).to.have.property('component').that.equals(mockComponent);
+		expect(domContainerNode).to.equal(mockElement[0]);
 	});
 
 	it('should unmount component on destroy', function() {
 		includeReactController.$onDestroy();
 		expect(mockUnmount).to.have.been.calledOnce;
-		expect(mockUnmount).to.have.been.calledWith(mockElement);
+		expect(mockUnmount).to.have.been.calledWith(mockElement[0]);
 	});
 
 	afterEach(function() {
