@@ -22,12 +22,10 @@
     "url": "https://github.com/medallia/angular-include-react"
   },
   "dependencies": {
-    "angular": "^1.5.0",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "prop-types": "^15.5.8"
   },
   "devDependencies": {
+    "angular": "^1.5.0",
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
     "babel-eslint": "^6.0.4",
@@ -49,15 +47,23 @@
     "ng-annotate-loader": "^0.2.0",
     "ng-redux": "^3.4.0-beta.1",
     "node-sass": "^4.5.0",
-    "react-addons-test-utils": "^15.4.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "react-redux": "^5.0.4",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^16.0.0",
     "redux": "^3.6.0",
     "sass-loader": "^6.0.0",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.8.0",
     "webpack": "^2.2.1",
     "webpack-config-utils": "^2.3.0"
+  },
+  "peerDependencies": {
+    "angular": "^1.5.0",
+    "ng-redux": "^3.4.0-beta.1",
+    "react": "^15.0.0 || ^16.0.0-0",
+    "react-dom": "^15.0.0 || ^16.0.0-0",
+    "react-redux": "^5.0.4"
   },
   "keywords": [
     "angular",
