@@ -74,5 +74,10 @@ module.exports = {
 	"globals": {
 		"browser": true,
 		"expect": true
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
 	}
 };
